@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4" data-id="contact-title">Contact Us</h1>
+      <p class="text-xl opacity-90" data-id="contact-subtitle">Get in touch with us</p>
+    </div>
+  </section>
+
+  <!-- Contact Form & Info -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white rounded-lg shadow-lg p-8" data-id="contact-form-section">
+          <h2 class="text-2xl font-bold mb-6" data-id="form-title">Send us a Message</h2>
+          
+          <form id="contact-form" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                <input type="text" id="first-name" name="firstName" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required data-id="first-name-input">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                <input type="text" id="last-name" name="lastName" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required data-id="last-name-input">
+              </div>
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+              <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required data-id="email-input">
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" data-id="phone-input">
+            </div>
+            
+            <div>
+              <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+              <select id="subject" name="subject" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required data-id="subject-select">
+                <option value="">Select a subject</option>
+                <option value="admissions">Admissions Inquiry</option>
+                <option value="academics">Academic Information</option>
+                <option value="placements">Placement Support</option>
+                <option value="facilities">Facilities & Infrastructure</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" required data-id="message-textarea"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium" data-id="submit-btn">
+              <i data-lucide="send" class="w-5 h-5 inline mr-2"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="space-y-8" data-id="contact-info-section">
+          <div>
+            <h2 class="text-2xl font-bold mb-6" data-id="info-title">Contact Information</h2>
+            
+            <div class="space-y-6">
+              <div class="flex items-start space-x-4" data-id="address-info">
+                <div class="bg-blue-100 p-3 rounded-lg">
+                  <i data-lucide="map-pin" class="w-6 h-6 text-blue-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold mb-2">Address</h3>
+                  <p class="text-gray-600">
+                    Trident Academy of Technology<br>
+                    F2, Chandaka Industrial Estate<br>
+                    Bhubaneswar, Odisha 751024<br>
+                    India
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4" data-id="phone-info">
+                <div class="bg-green-100 p-3 rounded-lg">
+                  <i data-lucide="phone" class="w-6 h-6 text-green-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold mb-2">Phone Numbers</h3>
+                  <p class="text-gray-600">
+                    Main: +91 674-2720001<br>
+                    Admissions: +91 674-2720002<br>
+                    Toll Free: 1800-345-3333
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4" data-id="email-info">
+                <div class="bg-purple-100 p-3 rounded-lg">
+                  <i data-lucide="mail" class="w-6 h-6 text-purple-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold mb-2">Email Addresses</h3>
+                  <p class="text-gray-600">
+                    General: info@trident.ac.in<br>
+                    Admissions: admissions@trident.ac.in<br>
+                    Careers: careers@trident.ac.in
+                  </p>
+                </div>
+              </div>
+              
+              <div class="flex items-start space-x-4" data-id="hours-info">
+                <div class="bg-orange-100 p-3 rounded-lg">
+                  <i data-lucide="clock" class="w-6 h-6 text-orange-600"></i>
+                </div>
+                <div>
+                  <h3 class="font-semibold mb-2">Office Hours</h3>
+                  <p class="text-gray-600">
+                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                    Saturday: 9:00 AM - 4:00 PM<br>
+                    Sunday: Closed
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Social Media -->
+          <div data-id="social-media-section">
+            <h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors" data-id="facebook-link">
+                <i data-lucide="facebook" class="w-5 h-5"></i>
+              </a>
+              <a href="#" class="bg-blue-400 text-white p-3 rounded-lg hover:bg-blue-500 transition-colors" data-id="twitter-link">
+                <i data-lucide="twitter" class="w-5 h-5"></i>
+              </a>
+              <a href="#" class="bg-blue-700 text-white p-3 rounded-lg hover:bg-blue-800 transition-colors" data-id="linkedin-link">
+                <i data-lucide="linkedin" class="w-5 h-5"></i>
+              </a>
+              <a href="#" class="bg-red-600 text-white p-3 rounded-lg hover:bg-red-700 transition-colors" data-id="youtube-link">
+                <i data-lucide="youtube" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="map-title">Find Us</h2>
+        <p class="text-gray-600" data-id="map-subtitle">Located in the heart of Bhubaneswar</p>
+      </div>
+      
+      <!-- Map Placeholder -->
+      <div class="bg-gray-300 rounded-lg h-96 flex items-center justify-center" data-id="map-placeholder">
+        <div class="text-center">
+          <i data-lucide="map" class="w-12 h-12 text-gray-600 mx-auto mb-4"></i>
+          <p class="text-gray-600">Interactive Map</p>
+          <p class="text-sm text-gray-500">Chandaka Industrial Estate, Bhubaneswar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="faq-title">Frequently Asked Questions</h2>
+        <p class="text-gray-600" data-id="faq-subtitle">Quick answers to common questions</p>
+      </div>
+      
+      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="border border-gray-200 rounded-lg" data-id="faq-1">
+          <button class="faq-question w-full px-6 py-4 text-left font-medium hover:bg-gray-50 flex justify-between items-center">
+            <span>What are the admission requirements?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+          </button>
+          <div class="faq-answer hidden px-6 py-4 border-t border-gray-200 text-gray-600">
+            <p>Admission requirements vary by program. Generally, candidates need to pass 10+2 with minimum 60% marks for B.Tech programs. Entrance exams like JEE Main or state-level exams are considered.</p>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg" data-id="faq-2">
+          <button class="faq-question w-full px-6 py-4 text-left font-medium hover:bg-gray-50 flex justify-between items-center">
+            <span>What are the hostel facilities like?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+          </button>
+          <div class="faq-answer hidden px-6 py-4 border-t border-gray-200 text-gray-600">
+            <p>We provide separate hostels for boys and girls with modern amenities including Wi-Fi, mess facilities, recreation rooms, and 24/7 security. Accommodation is available on a first-come, first-served basis.</p>
+          </div>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg" data-id="faq-3">
+          <button class="faq-question w-full px-6 py-4 text-left font-medium hover:bg-gray-50 flex justify-between items-center">
+            <span>How is the placement record?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5"></i>
+          </button>
+          <div class="faq-answer hidden px-6 py-4 border-t border-gray-200 text-gray-600">
+            <p>TAT maintains an excellent placement record with 95% placement rate. Top companies like TCS, Infosys, Microsoft, Amazon regularly recruit our students with packages ranging from 3-18 LPA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Contact form handling
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Show success message
+      alert('Thank you for your message! We will get back to you soon.');
+      contactForm.reset();
+    });
+    
+    // FAQ functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const icon = question.querySelector('i');
+        
+        // Toggle answer visibility
+        answer.classList.toggle('hidden');
+        
+        // Rotate icon
+        if (answer.classList.contains('hidden')) {
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

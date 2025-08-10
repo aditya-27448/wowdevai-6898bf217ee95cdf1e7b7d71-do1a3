@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4" data-id="faculty-title">Our Faculty</h1>
+      <p class="text-xl opacity-90" data-id="faculty-subtitle">Excellence in Teaching & Research</p>
+    </div>
+  </section>
+
+  <!-- Department Filter -->
+  <section class="py-8 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="filter-btn active bg-blue-600 text-white px-4 py-2 rounded-lg" data-filter="all" data-id="filter-all">All Departments</button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="cse" data-id="filter-cse">Computer Science</button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="ece" data-id="filter-ece">Electronics & Communication</button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="me" data-id="filter-me">Mechanical</button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="ce" data-id="filter-ce">Civil</button>
+        <button class="filter-btn bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="mba" data-id="filter-mba">MBA</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Grid -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="faculty-grid">
+        
+        <!-- Computer Science Faculty -->
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="cse" data-id="faculty-card-1">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Rajesh Kumar" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Dr. Rajesh Kumar</h3>
+            <p class="text-blue-600 font-medium mb-2">Head of Department - CSE</p>
+            <p class="text-gray-600 text-sm mb-3">Ph.D. in Computer Science from IIT Delhi</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>15 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Jan 2010</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Data Structures, Algorithms</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="cse" data-id="faculty-card-2">
+          <img src="https://images.unsplash.com/photo-1494790108755-2616b612b494?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Priya Sharma" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Dr. Priya Sharma</h3>
+            <p class="text-blue-600 font-medium mb-2">Professor - CSE</p>
+            <p class="text-gray-600 text-sm mb-3">Ph.D. in AI/ML from IISc Bangalore</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>12 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Aug 2012</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Machine Learning, AI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electronics Faculty -->
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="ece" data-id="faculty-card-3">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Prof. Amit Patel" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Prof. Amit Patel</h3>
+            <p class="text-blue-600 font-medium mb-2">Head of Department - ECE</p>
+            <p class="text-gray-600 text-sm mb-3">M.Tech in Electronics from NIT Rourkela</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>18 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Mar 2008</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Digital Circuits, VLSI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mechanical Faculty -->
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="me" data-id="faculty-card-4">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Suresh Singh" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Dr. Suresh Singh</h3>
+            <p class="text-blue-600 font-medium mb-2">Head of Department - ME</p>
+            <p class="text-gray-600 text-sm mb-3">Ph.D. in Mechanical from IIT Kharagpur</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>20 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Jun 2005</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Thermodynamics, Manufacturing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Civil Faculty -->
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="ce" data-id="faculty-card-5">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Prof. Meera Gupta" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Prof. Meera Gupta</h3>
+            <p class="text-blue-600 font-medium mb-2">Head of Department - CE</p>
+            <p class="text-gray-600 text-sm mb-3">M.Tech in Structural Engineering from IITR</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>16 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Sep 2009</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Structural Design, Concrete Tech</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MBA Faculty -->
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="mba" data-id="faculty-card-6">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Vikram Malhotra" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Dr. Vikram Malhotra</h3>
+            <p class="text-blue-600 font-medium mb-2">Director - MBA Program</p>
+            <p class="text-gray-600 text-sm mb-3">Ph.D. in Management from IIM Calcutta</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>22 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Apr 2007</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Strategy, Operations Management</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Faculty -->
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="cse" data-id="faculty-card-7">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Prof. Neha Agarwal" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Prof. Neha Agarwal</h3>
+            <p class="text-blue-600 font-medium mb-2">Associate Professor - CSE</p>
+            <p class="text-gray-600 text-sm mb-3">M.Tech in Software Engineering from BITS</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>10 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Feb 2015</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Software Engineering, DBMS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="ece" data-id="faculty-card-8">
+          <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dr. Ravi Verma" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Dr. Ravi Verma</h3>
+            <p class="text-blue-600 font-medium mb-2">Professor - ECE</p>
+            <p class="text-gray-600 text-sm mb-3">Ph.D. in Communication Systems from IIT Delhi</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>14 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Nov 2011</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Communication Systems, DSP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-card bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-department="me" data-id="faculty-card-9">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Prof. Anita Rao" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-bold text-xl mb-2">Prof. Anita Rao</h3>
+            <p class="text-blue-600 font-medium mb-2">Associate Professor - ME</p>
+            <p class="text-gray-600 text-sm mb-3">M.Tech in Production Engineering from NIT Calicut</p>
+            <div class="space-y-2 text-sm">
+              <div class="flex items-center">
+                <i data-lucide="briefcase" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>11 years experience</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="calendar" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Joined: Jan 2014</span>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="book" class="w-4 h-4 mr-2 text-gray-500"></i>
+                <span>Production Planning, Quality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Faculty filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const facultyCards = document.querySelectorAll('.faculty-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        
+        // Update button states
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active', 'bg-blue-600', 'text-white');
+          btn.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        button.classList.add('active', 'bg-blue-600', 'text-white');
+        button.classList.remove('bg-gray-200', 'text-gray-700');
+        
+        // Filter faculty cards
+        facultyCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-department') === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

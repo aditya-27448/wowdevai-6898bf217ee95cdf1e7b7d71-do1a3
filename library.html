@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 text-white py-20" data-id="library-hero">
+    <div class="container mx-auto px-6">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6" data-id="hero-title">Central Library</h1>
+        <p class="text-xl md:text-2xl mb-8 text-indigo-100" data-id="hero-subtitle">Gateway to Knowledge and Learning</p>
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop" 
+             alt="Library" class="w-full max-w-4xl mx-auto rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Library Statistics -->
+  <section class="py-16" data-id="library-stats">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center" data-id="books-stat">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="book" class="w-8 h-8 text-blue-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-blue-600 mb-2">50,000+</div>
+          <div class="font-semibold">Books Collection</div>
+        </div>
+
+        <div class="text-center" data-id="journals-stat">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="newspaper" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-green-600 mb-2">500+</div>
+          <div class="font-semibold">Journals & Magazines</div>
+        </div>
+
+        <div class="text-center" data-id="digital-stat">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="monitor" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-purple-600 mb-2">10,000+</div>
+          <div class="font-semibold">E-Books & Digital Resources</div>
+        </div>
+
+        <div class="text-center" data-id="seats-stat">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="chair" class="w-8 h-8 text-orange-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-orange-600 mb-2">300</div>
+          <div class="font-semibold">Reading Seats</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Library Services -->
+  <section class="py-16 bg-gray-100" data-id="library-services">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="services-title">Library Services</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="book-lending">
+          <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="book-open" class="w-8 h-8 text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Book Lending</h3>
+          <p class="text-gray-600 mb-4">Borrow books for academic and personal reading with flexible lending periods.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Students: 5 books for 15 days</li>
+            <li>• Faculty: 10 books for 30 days</li>
+            <li>• Renewal facility available</li>
+            <li>• Online reservation system</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="digital-access">
+          <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="wifi" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Digital Resources</h3>
+          <p class="text-gray-600 mb-4">Access to vast digital collections and online databases.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• IEEE Digital Library</li>
+            <li>• ACM Digital Library</li>
+            <li>• Springer Link</li>
+            <li>• E-books and E-journals</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="research-support">
+          <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="search" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Research Support</h3>
+          <p class="text-gray-600 mb-4">Dedicated assistance for research projects and academic work.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Reference assistance</li>
+            <li>• Citation guidance</li>
+            <li>• Research methodology support</li>
+            <li>• Inter-library loan service</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="study-spaces">
+          <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="users" class="w-8 h-8 text-orange-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Study Spaces</h3>
+          <p class="text-gray-600 mb-4">Various study environments to suit different learning preferences.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Silent reading areas</li>
+            <li>• Group study rooms</li>
+            <li>• Discussion zones</li>
+            <li>• Individual carrels</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="printing">
+          <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="printer" class="w-8 h-8 text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Printing & Scanning</h3>
+          <p class="text-gray-600 mb-4">Modern printing and scanning facilities for academic needs.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• High-speed printers</li>
+            <li>• Color printing available</li>
+            <li>• Scanning services</li>
+            <li>• Photocopying facility</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="orientation">
+          <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+            <i data-lucide="graduation-cap" class="w-8 h-8 text-indigo-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Information Literacy</h3>
+          <p class="text-gray-600 mb-4">Training programs to enhance research and information skills.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Library orientation sessions</li>
+            <li>• Database training</li>
+            <li>• Research workshops</li>
+            <li>• Academic writing support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="py-16" data-id="collections">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="collections-title">Library Collections</h2>
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div data-id="subject-collections">
+          <h3 class="text-2xl font-bold mb-8">Subject-wise Collections</h3>
+          <div class="space-y-6">
+            <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+              <div class="flex items-center gap-4">
+                <i data-lucide="cpu" class="w-6 h-6 text-blue-600"></i>
+                <span class="font-semibold">Computer Science & IT</span>
+              </div>
+              <span class="text-gray-600">8,500 books</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+              <div class="flex items-center gap-4">
+                <i data-lucide="zap" class="w-6 h-6 text-yellow-600"></i>
+                <span class="font-semibold">Electronics & Communication</span>
+              </div>
+              <span class="text-gray-600">6,200 books</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+              <div class="flex items-center gap-4">
+                <i data-lucide="settings" class="w-6 h-6 text-green-600"></i>
+                <span class="font-semibold">Mechanical Engineering</span>
+              </div>
+              <span class="text-gray-600">5,800 books</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+              <div class="flex items-center gap-4">
+                <i data-lucide="building" class="w-6 h-6 text-purple-600"></i>
+                <span class="font-semibold">Civil Engineering</span>
+              </div>
+              <span class="text-gray-600">4,500 books</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+              <div class="flex items-center gap-4">
+                <i data-lucide="briefcase" class="w-6 h-6 text-indigo-600"></i>
+                <span class="font-semibold">Management & MBA</span>
+              </div>
+              <span class="text-gray-600">3,200 books</span>
+            </div>
+            <div class="flex items-center justify-between p-4 bg-white rounded-lg shadow">
+              <div class="flex items-center gap-4">
+                <i data-lucide="book-open" class="w-6 h-6 text-orange-600"></i>
+                <span class="font-semibold">General & Reference</span>
+              </div>
+              <span class="text-gray-600">2,800 books</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-id="special-collections">
+          <h3 class="text-2xl font-bold mb-8">Special Collections</h3>
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h4 class="font-bold text-lg mb-3 flex items-center gap-2">
+                <i data-lucide="globe" class="w-5 h-5 text-blue-600"></i>
+                Digital Archive
+              </h4>
+              <p class="text-gray-600">Rare books, thesis collection, and institutional publications in digital format.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h4 class="font-bold text-lg mb-3 flex items-center gap-2">
+                <i data-lucide="award" class="w-5 h-5 text-green-600"></i>
+                Competition Books
+              </h4>
+              <p class="text-gray-600">Extensive collection for competitive exams like GATE, GRE, CAT, and more.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h4 class="font-bold text-lg mb-3 flex items-center gap-2">
+                <i data-lucide="newspaper" class="w-5 h-5 text-purple-600"></i>
+                Periodicals
+              </h4>
+              <p class="text-gray-600">Current subscriptions to technical journals, magazines, and newspapers.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <h4 class="font-bold text-lg mb-3 flex items-center gap-2">
+                <i data-lucide="headphones" class="w-5 h-5 text-orange-600"></i>
+                Multimedia Collection
+              </h4>
+              <p class="text-gray-600">Educational CDs, DVDs, and audio-visual learning materials.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Library Hours & Rules -->
+  <section class="py-16 bg-blue-50" data-id="library-info">
+    <div class="container mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div data-id="library-hours">
+          <h3 class="text-2xl font-bold mb-8">Library Hours</h3>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="space-y-4">
+              <div class="flex justify-between items-center py-3 border-b">
+                <span class="font-semibold">Monday - Friday</span>
+                <span class="text-blue-600">8:00 AM - 10:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-3 border-b">
+                <span class="font-semibold">Saturday</span>
+                <span class="text-blue-600">9:00 AM - 8:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-3 border-b">
+                <span class="font-semibold">Sunday</span>
+                <span class="text-blue-600">10:00 AM - 6:00 PM</span>
+              </div>
+              <div class="flex justify-between items-center py-3">
+                <span class="font-semibold">Exam Period</span>
+                <span class="text-green-600">24/7 Access</span>
+              </div>
+            </div>
+            
+            <div class="mt-8 p-4 bg-yellow-50 rounded-lg">
+              <h4 class="font-bold text-yellow-800 mb-2">Special Note</h4>
+              <p class="text-yellow-700 text-sm">Extended hours during examination periods. Holiday timings may vary - check library notice board for updates.</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-id="library-rules">
+          <h3 class="text-2xl font-bold mb-8">Library Rules & Guidelines</h3>
+          <div class="bg-white p-8 rounded-xl shadow-lg">
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <i data-lucide="check-circle" class="w-5 h-5 text-green-600 mt-1"></i>
+                <div>
+                  <h4 class="font-semibold mb-1">Entry Requirements</h4>
+                  <p class="text-gray-600 text-sm">Valid student/staff ID card required for entry</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i data-lucide="volume-x" class="w-5 h-5 text-red-600 mt-1"></i>
+                <div>
+                  <h4 class="font-semibold mb-1">Maintain Silence</h4>
+                  <p class="text-gray-600 text-sm">Silent environment to be maintained in reading areas</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i data-lucide="smartphone" class="w-5 h-5 text-orange-600 mt-1"></i>
+                <div>
+                  <h4 class="font-semibold mb-1">Mobile Phones</h4>
+                  <p class="text-gray-600 text-sm">Keep phones on silent mode; calls outside only</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i data-lucide="coffee" class="w-5 h-5 text-blue-600 mt-1"></i>
+                <div>
+                  <h4 class="font-semibold mb-1">Food & Drinks</h4>
+                  <p class="text-gray-600 text-sm">Water allowed; no food or other beverages</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i data-lucide="book-marked" class="w-5 h-5 text-purple-600 mt-1"></i>
+                <div>
+                  <h4 class="font-semibold mb-1">Book Care</h4>
+                  <p class="text-gray-600 text-sm">Handle books carefully; report damage immediately</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i data-lucide="clock" class="w-5 h-5 text-indigo-600 mt-1"></i>
+                <div>
+                  <h4 class="font-semibold mb-1">Return Policy</h4>
+                  <p class="text-gray-600 text-sm">Return books on time to avoid penalties</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Catalog -->
+  <section class="py-16" data-id="online-catalog">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="catalog-title">Online Library Catalog</h2>
+        <p class="text-xl text-gray-600" data-id="catalog-subtitle">Search our entire collection from anywhere, anytime</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <div class="flex flex-col md:flex-row gap-4 mb-6">
+            <input type="text" placeholder="Search books, journals, authors..." 
+                   class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+            <select class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+              <option>All Categories</option>
+              <option>Computer Science</option>
+              <option>Electronics</option>
+              <option>Mechanical</option>
+              <option>Civil</option>
+              <option>Management</option>
+            </select>
+            <button class="px-8 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition flex items-center gap-2">
+              <i data-lucide="search" class="w-5 h-5"></i>
+              Search
+            </button>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-4 text-center">
+            <div class="p-4 bg-blue-50 rounded-lg">
+              <i data-lucide="book" class="w-8 h-8 text-blue-600 mx-auto mb-2"></i>
+              <div class="font-semibold">Check Availability</div>
+              <div class="text-sm text-gray-600">Real-time book status</div>
+            </div>
+            <div class="p-4 bg-green-50 rounded-lg">
+              <i data-lucide="bookmark" class="w-8 h-8 text-green-600 mx-auto mb-2"></i>
+              <div class="font-semibold">Reserve Books</div>
+              <div class="text-sm text-gray-600">Hold books for pickup</div>
+            </div>
+            <div class="p-4 bg-purple-50 rounded-lg">
+              <i data-lucide="history" class="w-8 h-8 text-purple-600 mx-auto mb-2"></i>
+              <div class="font-semibold">Account History</div>
+              <div class="text-sm text-gray-600">Track borrowing history</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    lucide.createIcons();
+  </script>
+</body>
+</html>

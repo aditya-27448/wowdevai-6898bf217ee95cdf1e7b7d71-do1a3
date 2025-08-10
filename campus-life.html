@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Life - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-green-900 via-green-800 to-teal-900 text-white py-20" data-id="campus-life-hero">
+    <div class="container mx-auto px-6">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6" data-id="hero-title">Campus Life</h1>
+        <p class="text-xl md:text-2xl mb-8 text-green-100" data-id="hero-subtitle">Where Learning Meets Living</p>
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=400&fit=crop" 
+             alt="Campus Life" class="w-full max-w-4xl mx-auto rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Life Overview -->
+  <section class="py-16" data-id="student-life">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="life-title">Vibrant Student Life</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-id="life-subtitle">At Trident Academy of Technology, campus life extends far beyond academics. Our students engage in a rich tapestry of activities that foster personal growth, leadership skills, and lifelong friendships.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center" data-id="clubs-stat">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="users" class="w-8 h-8 text-blue-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-blue-600 mb-2">25+</div>
+          <div class="font-semibold">Student Clubs</div>
+        </div>
+
+        <div class="text-center" data-id="events-stat">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="calendar" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-green-600 mb-2">100+</div>
+          <div class="font-semibold">Annual Events</div>
+        </div>
+
+        <div class="text-center" data-id="sports-stat">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="trophy" class="w-8 h-8 text-orange-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-orange-600 mb-2">15</div>
+          <div class="font-semibold">Sports Teams</div>
+        </div>
+
+        <div class="text-center" data-id="facilities-stat">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="home" class="w-8 h-8 text-purple-600"></i>
+          </div>
+          <div class="text-3xl font-bold text-purple-600 mb-2">24/7</div>
+          <div class="font-semibold">Campus Access</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hostels & Accommodation -->
+  <section class="py-16 bg-gray-100" data-id="hostels">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="hostels-title">Hostels & Accommodation</h2>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://images.unsplash.com/photo-1555854877-bab0e5e2fc37?w=600&h=400&fit=crop" 
+               alt="Hostel" class="w-full rounded-lg shadow-lg">
+        </div>
+        <div data-id="hostel-info">
+          <h3 class="text-2xl font-bold mb-6">Modern Hostel Facilities</h3>
+          <div class="space-y-4">
+            <div class="flex items-start gap-4">
+              <i data-lucide="bed" class="w-6 h-6 text-blue-600 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Comfortable Living Spaces</h4>
+                <p class="text-gray-600">Well-furnished rooms with study areas, storage, and modern amenities</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i data-lucide="wifi" class="w-6 h-6 text-blue-600 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">High-Speed Internet</h4>
+                <p class="text-gray-600">24/7 Wi-Fi connectivity for academic and personal use</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i data-lucide="utensils" class="w-6 h-6 text-blue-600 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">Nutritious Meals</h4>
+                <p class="text-gray-600">Hygienic mess facilities with diverse menu options</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <i data-lucide="shield-check" class="w-6 h-6 text-blue-600 mt-1"></i>
+              <div>
+                <h4 class="font-semibold mb-1">24/7 Security</h4>
+                <p class="text-gray-600">Round-the-clock security with CCTV surveillance</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4 mt-8">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <h4 class="font-semibold text-lg mb-2">Boys Hostel</h4>
+              <p class="text-gray-600">Capacity: 800 students</p>
+              <p class="text-gray-600">Rooms: Single & Twin sharing</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <h4 class="font-semibold text-lg mb-2">Girls Hostel</h4>
+              <p class="text-gray-600">Capacity: 600 students</p>
+              <p class="text-gray-600">Rooms: Single & Twin sharing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food & Dining -->
+  <section class="py-16" data-id="dining">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="dining-title">Food & Dining</h2>
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="main-mess">
+          <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=400&h=250&fit=crop" 
+               alt="Main Mess" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-bold mb-4">Main Mess</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>North & South Indian Cuisine</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Breakfast, Lunch & Dinner</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Vegetarian & Non-Vegetarian</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Special Festival Meals</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="food-court">
+          <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=250&fit=crop" 
+               alt="Food Court" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-bold mb-4">Food Court</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Multiple Food Outlets</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Fast Food & Snacks</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Beverages & Desserts</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Extended Hours</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg" data-id="cafeteria">
+          <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=400&h=250&fit=crop" 
+               alt="Cafeteria" class="w-full h-48 object-cover rounded-lg mb-6">
+          <h3 class="text-xl font-bold mb-4">Campus Cafeteria</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Coffee & Tea</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Light Snacks</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Study-Friendly Environment</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-green-600"></i>
+              <span>Wi-Fi Available</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports & Recreation -->
+  <section class="py-16 bg-gray-100" data-id="sports">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="sports-title">Sports & Recreation</h2>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-id="sports-info">
+          <h3 class="text-2xl font-bold mb-6">World-Class Sports Facilities</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Basketball Courts</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Football Ground</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Cricket Ground</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Tennis Courts</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Badminton Courts</span>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Table Tennis</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Volleyball Court</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Athletics Track</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Swimming Pool</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-green-600"></i>
+                <span>Gymnasium</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8">
+            <h4 class="font-bold text-lg mb-4">Recent Achievements</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-3">
+                <i data-lucide="trophy" class="w-5 h-5 text-yellow-600"></i>
+                <span>Inter-University Basketball Champions 2024</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="medal" class="w-5 h-5 text-gray-600"></i>
+                <span>State Level Cricket Tournament - Runners Up</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <i data-lucide="award" class="w-5 h-5 text-orange-600"></i>
+                <span>Best Sports Infrastructure Award 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop" 
+               alt="Sports 1" class="w-full h-40 object-cover rounded-lg shadow-lg">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=300&h=200&fit=crop" 
+               alt="Sports 2" class="w-full h-40 object-cover rounded-lg shadow-lg">
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=200&fit=crop" 
+               alt="Sports 3" class="w-full h-40 object-cover rounded-lg shadow-lg">
+          <img src="https://images.unsplash.com/photo-1592656094267-764a45160876?w=300&h=200&fit=crop" 
+               alt="Sports 4" class="w-full h-40 object-cover rounded-lg shadow-lg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student Activities -->
+  <section class="py-16" data-id="activities">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="activities-title">Student Activities</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-id="cultural">
+          <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="music" class="w-8 h-8 text-pink-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Cultural Events</h3>
+          <p class="text-gray-600 mb-6">Annual cultural fest featuring dance, music, drama, and art competitions.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Dance Competitions</li>
+            <li>• Music Concerts</li>
+            <li>• Drama & Theatre</li>
+            <li>• Art Exhibitions</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-id="technical">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="cpu" class="w-8 h-8 text-blue-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Technical Fests</h3>
+          <p class="text-gray-600 mb-6">Showcase your technical skills through coding competitions and project exhibitions.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Coding Competitions</li>
+            <li>• Project Exhibitions</li>
+            <li>• Robotics Contests</li>
+            <li>• Innovation Challenges</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-xl shadow-lg text-center" data-id="community">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="heart" class="w-8 h-8 text-green-600"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Community Service</h3>
+          <p class="text-gray-600 mb-6">Making a positive impact through various social and environmental initiatives.</p>
+          <ul class="text-sm text-gray-600 space-y-2">
+            <li>• Blood Donation Drives</li>
+            <li>• Environmental Campaigns</li>
+            <li>• Teaching Programs</li>
+            <li>• Health Awareness</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Amenities -->
+  <section class="py-16 bg-blue-50" data-id="amenities">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="amenities-title">Campus Amenities</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="library-amenity">
+          <i data-lucide="book-open" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Central Library</h3>
+          <p class="text-gray-600 text-sm">50,000+ books & digital resources</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="medical-amenity">
+          <i data-lucide="heart-pulse" class="w-12 h-12 text-red-600 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Medical Center</h3>
+          <p class="text-gray-600 text-sm">24/7 healthcare facility</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="transport-amenity">
+          <i data-lucide="bus" class="w-12 h-12 text-green-600 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Transport</h3>
+          <p class="text-gray-600 text-sm">Bus service to major city areas</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="atm-amenity">
+          <i data-lucide="credit-card" class="w-12 h-12 text-purple-600 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Banking</h3>
+          <p class="text-gray-600 text-sm">ATMs & banking services</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="shopping-amenity">
+          <i data-lucide="shopping-bag" class="w-12 h-12 text-orange-600 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Convenience Store</h3>
+          <p class="text-gray-600 text-sm">Daily essentials & stationery</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="laundry-amenity">
+          <i data-lucide="shirt" class="w-12 h-12 text-indigo-600 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Laundry</h3>
+          <p class="text-gray-600 text-sm">Automated laundry facility</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="parking-amenity">
+          <i data-lucide="car" class="w-12 h-12 text-gray-600 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Parking</h3>
+          <p class="text-gray-600 text-sm">Secure vehicle parking</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow-lg text-center" data-id="security-amenity">
+          <i data-lucide="shield-check" class="w-12 h-12 text-red-500 mx-auto mb-4"></i>
+          <h3 class="font-bold text-lg mb-2">Security</h3>
+          <p class="text-gray-600 text-sm">24/7 campus security</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    lucide.createIcons();
+  </script>
+</body>
+</html>

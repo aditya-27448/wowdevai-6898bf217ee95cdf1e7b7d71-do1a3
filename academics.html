@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4" data-id="academics-title">Academic Excellence</h1>
+      <p class="text-xl opacity-90" data-id="academics-subtitle">World-class programs for future leaders</p>
+    </div>
+  </section>
+
+  <!-- Programs Overview -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="programs-overview-title">Our Academic Programs</h2>
+        <p class="text-gray-600" data-id="programs-overview-subtitle">Comprehensive education across multiple disciplines</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- B.Tech Programs -->
+        <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-8 hover:shadow-xl transition-shadow" data-id="btech-programs">
+          <div class="flex items-center mb-4">
+            <i data-lucide="cpu" class="w-8 h-8 text-blue-600 mr-3"></i>
+            <h3 class="text-2xl font-bold text-gray-900">B.Tech Programs</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li>• Computer Science & Engineering</li>
+            <li>• Electronics & Communication Engineering</li>
+            <li>• Mechanical Engineering</li>
+            <li>• Civil Engineering</li>
+            <li>• Information Technology</li>
+          </ul>
+          <div class="text-sm text-gray-600">
+            <div class="mb-2"><strong>Duration:</strong> 4 Years</div>
+            <div><strong>Eligibility:</strong> 10+2 with Physics, Chemistry, Mathematics</div>
+          </div>
+        </div>
+
+        <!-- M.Tech Programs -->
+        <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-lg p-8 hover:shadow-xl transition-shadow" data-id="mtech-programs">
+          <div class="flex items-center mb-4">
+            <i data-lucide="graduation-cap" class="w-8 h-8 text-green-600 mr-3"></i>
+            <h3 class="text-2xl font-bold text-gray-900">M.Tech Programs</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li>• Computer Science & Engineering</li>
+            <li>• Electronics & Communication Engineering</li>
+            <li>• Mechanical Engineering</li>
+            <li>• Structural Engineering</li>
+          </ul>
+          <div class="text-sm text-gray-600">
+            <div class="mb-2"><strong>Duration:</strong> 2 Years</div>
+            <div><strong>Eligibility:</strong> B.Tech/B.E. with valid GATE score</div>
+          </div>
+        </div>
+
+        <!-- Management Programs -->
+        <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg p-8 hover:shadow-xl transition-shadow" data-id="management-programs">
+          <div class="flex items-center mb-4">
+            <i data-lucide="briefcase" class="w-8 h-8 text-purple-600 mr-3"></i>
+            <h3 class="text-2xl font-bold text-gray-900">Management Programs</h3>
+          </div>
+          <ul class="space-y-2 text-gray-700 mb-6">
+            <li>• Master of Business Administration (MBA)</li>
+            <li>• Master of Computer Applications (MCA)</li>
+            <li>• Executive MBA</li>
+            <li>• Certificate Programs</li>
+          </ul>
+          <div class="text-sm text-gray-600">
+            <div class="mb-2"><strong>Duration:</strong> 2-3 Years</div>
+            <div><strong>Eligibility:</strong> Graduation with CAT/MAT scores</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Department Details -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="departments-title">Departments</h2>
+        <p class="text-gray-600" data-id="departments-subtitle">Explore our specialized departments</p>
+      </div>
+      
+      <div class="space-y-8">
+        <!-- Computer Science Department -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-id="cse-department">
+          <div class="md:flex">
+            <div class="md:w-1/3">
+              <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Computer Science Lab" class="w-full h-64 md:h-full object-cover">
+            </div>
+            <div class="md:w-2/3 p-8">
+              <div class="flex items-center mb-4">
+                <i data-lucide="code" class="w-6 h-6 text-blue-600 mr-3"></i>
+                <h3 class="text-2xl font-bold">Computer Science & Engineering</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                The CSE department focuses on cutting-edge technologies including AI/ML, Data Science, Cybersecurity, and Software Development. 
+                Our curriculum is designed to meet industry demands with hands-on projects and internships.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Key Subjects:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Data Structures & Algorithms</li>
+                    <li>• Machine Learning</li>
+                    <li>• Database Management</li>
+                    <li>• Computer Networks</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Facilities:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Advanced Computing Labs</li>
+                    <li>• AI/ML Research Center</li>
+                    <li>• Software Development Studio</li>
+                    <li>• Innovation Lab</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electronics Department -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-id="ece-department">
+          <div class="md:flex">
+            <div class="md:w-1/3">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Electronics Lab" class="w-full h-64 md:h-full object-cover">
+            </div>
+            <div class="md:w-2/3 p-8">
+              <div class="flex items-center mb-4">
+                <i data-lucide="zap" class="w-6 h-6 text-yellow-600 mr-3"></i>
+                <h3 class="text-2xl font-bold">Electronics & Communication Engineering</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                ECE department covers embedded systems, VLSI design, communication systems, and IoT. 
+                Students work on real-world projects in telecommunications, robotics, and electronic circuit design.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Key Subjects:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Digital Signal Processing</li>
+                    <li>• VLSI Design</li>
+                    <li>• Communication Systems</li>
+                    <li>• Embedded Systems</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Facilities:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Electronics Design Lab</li>
+                    <li>• Communication Lab</li>
+                    <li>• Microprocessor Lab</li>
+                    <li>• VLSI Design Center</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mechanical Department -->
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-id="me-department">
+          <div class="md:flex">
+            <div class="md:w-1/3">
+              <img src="https://images.unsplash.com/photo-1581092795442-7744db11c9ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mechanical Workshop" class="w-full h-64 md:h-full object-cover">
+            </div>
+            <div class="md:w-2/3 p-8">
+              <div class="flex items-center mb-4">
+                <i data-lucide="settings" class="w-6 h-6 text-gray-600 mr-3"></i>
+                <h3 class="text-2xl font-bold">Mechanical Engineering</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Mechanical Engineering department emphasizes design, manufacturing, thermal sciences, and automation. 
+                Students gain practical experience through workshops, industrial training, and capstone projects.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div>
+                  <h4 class="font-semibold mb-2">Key Subjects:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Thermodynamics</li>
+                    <li>• Manufacturing Technology</li>
+                    <li>• Machine Design</li>
+                    <li>• Fluid Mechanics</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold mb-2">Facilities:</h4>
+                  <ul class="text-gray-600 space-y-1">
+                    <li>• Manufacturing Workshop</li>
+                    <li>• CAD/CAM Lab</li>
+                    <li>• Materials Testing Lab</li>
+                    <li>• Thermal Engineering Lab</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Calendar -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="calendar-title">Academic Calendar 2023-24</h2>
+        <p class="text-gray-600" data-id="calendar-subtitle">Important academic dates and events</p>
+      </div>
+      
+      <div class="max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Odd Semester -->
+          <div class="bg-blue-50 rounded-lg p-6" data-id="odd-semester">
+            <h3 class="text-xl font-bold mb-4 text-blue-900">Odd Semester (July - December)</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between">
+                <span class="font-medium">Classes Begin:</span>
+                <span class="text-gray-600">July 15, 2024</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Mid-Term Exams:</span>
+                <span class="text-gray-600">September 15-22, 2024</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Classes End:</span>
+                <span class="text-gray-600">November 30, 2024</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">End-Term Exams:</span>
+                <span class="text-gray-600">December 5-20, 2024</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Result Declaration:</span>
+                <span class="text-gray-600">January 15, 2025</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Even Semester -->
+          <div class="bg-green-50 rounded-lg p-6" data-id="even-semester">
+            <h3 class="text-xl font-bold mb-4 text-green-900">Even Semester (January - June)</h3>
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between">
+                <span class="font-medium">Classes Begin:</span>
+                <span class="text-gray-600">January 20, 2025</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Mid-Term Exams:</span>
+                <span class="text-gray-600">March 15-22, 2025</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Classes End:</span>
+                <span class="text-gray-600">May 30, 2025</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">End-Term Exams:</span>
+                <span class="text-gray-600">June 5-20, 2025</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-medium">Result Declaration:</span>
+                <span class="text-gray-600">July 10, 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Holidays -->
+        <div class="mt-8 bg-yellow-50 rounded-lg p-6" data-id="holidays">
+          <h3 class="text-xl font-bold mb-4 text-yellow-900">Important Holidays</h3>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div>
+              <div class="font-medium">Diwali Break:</div>
+              <div class="text-gray-600">October 28 - November 5, 2024</div>
+            </div>
+            <div>
+              <div class="font-medium">Winter Break:</div>
+              <div class="text-gray-600">December 21 - January 19, 2025</div>
+            </div>
+            <div>
+              <div class="font-medium">Summer Break:</div>
+              <div class="text-gray-600">June 21 - July 14, 2025</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Innovation -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="research-title">Research & Innovation</h2>
+        <p class="text-gray-600" data-id="research-subtitle">Advancing knowledge through research</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-id="research-center-1">
+          <i data-lucide="brain" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">AI/ML Research Center</h3>
+          <p class="text-gray-600 text-sm">Advanced research in artificial intelligence, machine learning, and deep learning applications</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-id="research-center-2">
+          <i data-lucide="shield" class="w-12 h-12 text-green-600 mx-auto mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">Cybersecurity Lab</h3>
+          <p class="text-gray-600 text-sm">Research in network security, cryptography, and digital forensics</p>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center" data-id="research-center-3">
+          <i data-lucide="eco" class="w-12 h-12 text-green-600 mx-auto mb-4"></i>
+          <h3 class="font-semibold text-lg mb-2">Sustainable Technology</h3>
+          <p class="text-gray-600 text-sm">Innovation in renewable energy, environmental engineering, and green technology</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

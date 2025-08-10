@@ -1,0 +1,108 @@
+<nav class="bg-white shadow-lg sticky top-0 z-50" data-id="main-navbar">
+  <div class="container mx-auto px-6">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-3" data-id="navbar-logo">
+        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=50&h=50&fit=crop" 
+             alt="Trident Academy Logo" class="w-12 h-12 rounded-full">
+        <div>
+          <div class="font-bold text-xl text-gray-800">Trident Academy</div>
+          <div class="text-sm text-gray-600">of Technology</div>
+        </div>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden lg:flex items-center space-x-8" data-id="desktop-menu">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Home</a>
+        
+        <!-- About Dropdown -->
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-blue-600 transition font-medium flex items-center gap-1">
+            About
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About College</a>
+            <a href="campus-life.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Campus Life</a>
+            <a href="faculty.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Faculty</a>
+            <a href="alumni.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Alumni</a>
+          </div>
+        </div>
+
+        <!-- Academics Dropdown -->
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-blue-600 transition font-medium flex items-center gap-1">
+            Academics
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="academics.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Programs</a>
+            <a href="results.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Results</a>
+            <a href="library.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Library</a>
+            <a href="research.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Research</a>
+          </div>
+        </div>
+
+        <a href="admissions.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Admissions</a>
+        <a href="placements.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Placements</a>
+        
+        <!-- Student Services Dropdown -->
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-blue-600 transition font-medium flex items-center gap-1">
+            Students
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </button>
+          <div class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+            <a href="student-portal.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Student Portal</a>
+            <a href="events.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Events</a>
+            <a href="gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Gallery</a>
+            <a href="news.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">News</a>
+          </div>
+        </div>
+
+        <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition font-medium">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="lg:hidden text-gray-700" data-id="mobile-menu-btn">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden" data-id="mobile-menu">
+      <div class="py-4 space-y-2">
+        <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Home</a>
+        <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">About</a>
+        <a href="academics.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Academics</a>
+        <a href="admissions.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Admissions</a>
+        <a href="placements.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Placements</a>
+        <a href="student-portal.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Student Portal</a>
+        <a href="events.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Events</a>
+        <a href="faculty.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Faculty</a>
+        <a href="results.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Results</a>
+        <a href="gallery.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Gallery</a>
+        <a href="library.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Library</a>
+        <a href="research.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Research</a>
+        <a href="alumni.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Alumni</a>
+        <a href="campus-life.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Campus Life</a>
+        <a href="news.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">News</a>
+        <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 rounded">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuBtn = document.querySelector('[data-id="mobile-menu-btn"]');
+      const mobileMenu = document.querySelector('[data-id="mobile-menu"]');
+      
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function() {
+          mobileMenu.classList.toggle('hidden');
+        });
+      }
+    });
+  </script>
+</nav>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+  
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-blue-900 via-blue-800 to-purple-900 text-white">
+    <div class="absolute inset-0 bg-black opacity-40"></div>
+    <div class="relative container mx-auto px-4 py-24 lg:py-32">
+      <div class="max-w-4xl mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6" data-id="hero-title">
+          Trident Academy of Technology
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90" data-id="hero-subtitle">
+          Shaping Tomorrow's Engineers & Innovators
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="admissions.html" class="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-lg font-semibold transition-colors" data-id="apply-now-btn">
+            Apply Now
+          </a>
+          <a href="about.html" class="border border-white hover:bg-white hover:text-blue-900 px-8 py-3 rounded-lg font-semibold transition-colors" data-id="learn-more-btn">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="stat-item" data-id="stat-students">
+          <div class="text-3xl font-bold text-blue-900 mb-2">5000+</div>
+          <div class="text-gray-600">Students</div>
+        </div>
+        <div class="stat-item" data-id="stat-faculty">
+          <div class="text-3xl font-bold text-blue-900 mb-2">200+</div>
+          <div class="text-gray-600">Faculty Members</div>
+        </div>
+        <div class="stat-item" data-id="stat-placement">
+          <div class="text-3xl font-bold text-blue-900 mb-2">95%</div>
+          <div class="text-gray-600">Placement Rate</div>
+        </div>
+        <div class="stat-item" data-id="stat-companies">
+          <div class="text-3xl font-bold text-blue-900 mb-2">150+</div>
+          <div class="text-gray-600">Partner Companies</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Sections -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="featured-title">Explore Our Campus</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-id="card-academics">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Academics" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Academic Excellence</h3>
+            <p class="text-gray-600 mb-4">World-class curriculum designed for industry readiness</p>
+            <a href="academics.html" class="text-blue-600 hover:text-blue-800 font-medium">Learn More →</a>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-id="card-placements">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Placements" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Career Opportunities</h3>
+            <p class="text-gray-600 mb-4">Leading companies recruit our graduates every year</p>
+            <a href="placements.html" class="text-blue-600 hover:text-blue-800 font-medium">View Placements →</a>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow" data-id="card-campus">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Campus Life" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Campus Life</h3>
+            <p class="text-gray-600 mb-4">Vibrant campus with modern facilities and activities</p>
+            <a href="gallery.html" class="text-blue-600 hover:text-blue-800 font-medium">View Gallery →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News & Events -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="news-title">Latest News & Events</h2>
+        <p class="text-gray-600" data-id="news-subtitle">Stay updated with campus happenings</p>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="news-item-1">
+          <div class="text-sm text-blue-600 mb-2">Dec 15, 2024</div>
+          <h3 class="font-semibold mb-2">Tech Fest 2024 - Innovation Showcase</h3>
+          <p class="text-gray-600 text-sm mb-3">Annual technical festival featuring student projects and industry experts</p>
+          <a href="events.html" class="text-blue-600 text-sm font-medium">Read More →</a>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="news-item-2">
+          <div class="text-sm text-blue-600 mb-2">Dec 10, 2024</div>
+          <h3 class="font-semibold mb-2">Placement Drive - Microsoft</h3>
+          <p class="text-gray-600 text-sm mb-3">Campus placement drive scheduled for final year students</p>
+          <a href="placements.html" class="text-blue-600 text-sm font-medium">View Details →</a>
+        </div>
+        
+        <div class="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow" data-id="news-item-3">
+          <div class="text-sm text-blue-600 mb-2">Dec 5, 2024</div>
+          <h3 class="font-semibold mb-2">Research Symposium 2024</h3>
+          <p class="text-gray-600 text-sm mb-3">Faculty and students presenting cutting-edge research</p>
+          <a href="research.html" class="text-blue-600 text-sm font-medium">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <!-- Quick Reply Chat Bot -->
+  <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+    <button id="chat-toggle" class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg transition-colors" data-id="chat-toggle-btn">
+      <i data-lucide="message-circle" class="w-6 h-6"></i>
+    </button>
+    
+    <div id="chat-window" class="hidden absolute bottom-16 right-0 w-80 h-96 bg-white rounded-lg shadow-2xl border">
+      <div class="bg-blue-600 text-white p-4 rounded-t-lg flex justify-between items-center">
+        <h3 class="font-semibold">TAT Assistant</h3>
+        <button id="chat-close" data-id="chat-close-btn">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div id="chat-messages" class="flex-1 p-4 h-64 overflow-y-auto">
+        <div class="text-sm text-gray-600 mb-4">Hello! How can I help you today?</div>
+      </div>
+      <div class="p-4 border-t">
+        <div class="flex gap-2">
+          <input type="text" id="chat-input" placeholder="Type your question..." class="flex-1 px-3 py-2 border rounded-lg text-sm" data-id="chat-input">
+          <button id="chat-send" class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700" data-id="chat-send-btn">Send</button>
+        </div>
+        <div class="mt-2 flex flex-wrap gap-1">
+          <button class="quick-reply bg-gray-100 text-xs px-2 py-1 rounded hover:bg-gray-200" data-query="admission process">Admissions</button>
+          <button class="quick-reply bg-gray-100 text-xs px-2 py-1 rounded hover:bg-gray-200" data-query="fee structure">Fees</button>
+          <button class="quick-reply bg-gray-100 text-xs px-2 py-1 rounded hover:bg-gray-200" data-query="placement records">Placements</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    import { initChatbot } from './scripts/chatbot.js';
+    
+    // Load all shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize chatbot
+    initChatbot();
+    
+    // Initialize icons after components are loaded
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

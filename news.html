@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Announcements - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-red-900 via-red-800 to-orange-900 text-white py-20" data-id="news-hero">
+    <div class="container mx-auto px-6">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6" data-id="hero-title">News & Announcements</h1>
+        <p class="text-xl md:text-2xl mb-8 text-red-100" data-id="hero-subtitle">Stay Updated with Latest College News</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breaking News -->
+  <section class="py-4 bg-yellow-400" data-id="breaking-news">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center gap-4 text-center md:text-left">
+        <div class="bg-red-600 text-white px-3 py-1 rounded text-sm font-bold">BREAKING</div>
+        <div class="text-black font-semibold">
+          🎉 Trident Academy ranked #1 in Odisha for Engineering Excellence 2024 by Education Ministry
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Categories Filter -->
+  <section class="py-8" data-id="news-filter">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="news-filter-btn active bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition" 
+                data-category="all">All News</button>
+        <button class="news-filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition" 
+                data-category="academic">Academic</button>
+        <button class="news-filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition" 
+                data-category="placement">Placements</button>
+        <button class="news-filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition" 
+                data-category="research">Research</button>
+        <button class="news-filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition" 
+                data-category="events">Events</button>
+        <button class="news-filter-btn bg-gray-200 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-300 transition" 
+                data-category="achievements">Achievements</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured News -->
+  <section class="py-16" data-id="featured-news">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="featured-title">Featured News</h2>
+      
+      <div class="grid lg:grid-cols-2 gap-8 mb-12">
+        <!-- Main Featured Article -->
+        <article class="news-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="achievements" data-id="main-feature">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=300&fit=crop" 
+               alt="Award Ceremony" class="w-full h-64 object-cover">
+          <div class="p-8">
+            <div class="flex items-center gap-2 mb-4">
+              <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Achievement</span>
+              <span class="text-gray-500 text-sm">Dec 10, 2024</span>
+            </div>
+            <h3 class="text-2xl font-bold mb-4">Trident Academy Receives 'Best Engineering College' Award</h3>
+            <p class="text-gray-600 mb-6">The college has been honored with the prestigious 'Best Engineering College in Eastern India' award by the National Education Board for outstanding academic performance and industry partnerships.</p>
+            <button class="text-blue-600 hover:text-blue-800 font-semibold">Read Full Article →</button>
+          </div>
+        </article>
+
+        <!-- Secondary Featured -->
+        <div class="space-y-6">
+          <article class="news-item bg-white p-6 rounded-xl shadow-lg flex gap-4" data-category="placement" data-id="secondary-1">
+            <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=150&h=100&fit=crop" 
+                 alt="Placement Drive" class="w-24 h-16 object-cover rounded">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Placement</span>
+                <span class="text-gray-500 text-sm">Dec 8, 2024</span>
+              </div>
+              <h4 class="font-bold mb-2">Record-Breaking Placement Season 2024</h4>
+              <p class="text-gray-600 text-sm">95% students placed with highest package of ₹45 LPA by Google</p>
+            </div>
+          </article>
+
+          <article class="news-item bg-white p-6 rounded-xl shadow-lg flex gap-4" data-category="research" data-id="secondary-2">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=100&fit=crop" 
+                 alt="Research" class="w-24 h-16 object-cover rounded">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Research</span>
+                <span class="text-gray-500 text-sm">Dec 5, 2024</span>
+              </div>
+              <h4 class="font-bold mb-2">AI Research Lab Inaugurated</h4>
+              <p class="text-gray-600 text-sm">State-of-the-art AI research facility launched with ₹2 crore funding</p>
+            </div>
+          </article>
+
+          <article class="news-item bg-white p-6 rounded-xl shadow-lg flex gap-4" data-category="events" data-id="secondary-3">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=150&h=100&fit=crop" 
+                 alt="Tech Fest" class="w-24 h-16 object-cover rounded">
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Event</span>
+                <span class="text-gray-500 text-sm">Dec 3, 2024</span>
+              </div>
+              <h4 class="font-bold mb-2">Annual Tech Fest 'Innovate 2024'</h4>
+              <p class="text-gray-600 text-sm">3-day technology festival featuring competitions and exhibitions</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent News Grid -->
+  <section class="py-16 bg-gray-100" data-id="recent-news">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="recent-title">Recent News</h2>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Academic News -->
+        <article class="news-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="academic" data-id="news-1">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=200&fit=crop" 
+               alt="Academic" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Academic</span>
+              <span class="text-gray-500 text-sm">Nov 30, 2024</span>
+            </div>
+            <h3 class="font-bold text-lg mb-3">New Curriculum for AI & Data Science</h3>
+            <p class="text-gray-600 text-sm mb-4">Updated syllabus aligned with industry requirements launched for BTech CSE specialization</p>
+            <button class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</button>
+          </div>
+        </article>
+
+        <article class="news-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="placement" data-id="news-2">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=200&fit=crop" 
+               alt="Placement" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Placement</span>
+              <span class="text-gray-500 text-sm">Nov 28, 2024</span>
+            </div>
+            <h3 class="font-bold text-lg mb-3">Microsoft Campus Recruitment Drive</h3>
+            <p class="text-gray-600 text-sm mb-4">50 students selected in Microsoft's on-campus recruitment for SDE positions</p>
+            <button class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</button>
+          </div>
+        </article>
+
+        <article class="news-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="events" data-id="news-3">
+          <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=400&h=200&fit=crop" 
+               alt="Cultural Event" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-pink-100 text-pink-800 text-xs px-2 py-1 rounded">Event</span>
+              <span class="text-gray-500 text-sm">Nov 25, 2024</span>
+            </div>
+            <h3 class="font-bold text-lg mb-3">Cultural Fest 'Sanskriti 2024'</h3>
+            <p class="text-gray-600 text-sm mb-4">Grand cultural festival featuring music, dance, and drama competitions</p>
+            <button class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</button>
+          </div>
+        </article>
+
+        <article class="news-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="research" data-id="news-4">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=200&fit=crop" 
+               alt="Research Lab" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Research</span>
+              <span class="text-gray-500 text-sm">Nov 22, 2024</span>
+            </div>
+            <h3 class="font-bold text-lg mb-3">IoT Research Paper Published in IEEE</h3>
+            <p class="text-gray-600 text-sm mb-4">Faculty and students' collaborative research on smart cities published in IEEE journal</p>
+            <button class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</button>
+          </div>
+        </article>
+
+        <article class="news-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="achievements" data-id="news-5">
+          <img src="https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&h=200&fit=crop" 
+               alt="Achievement" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded">Achievement</span>
+              <span class="text-gray-500 text-sm">Nov 20, 2024</span>
+            </div>
+            <h3 class="font-bold text-lg mb-3">Students Win National Coding Championship</h3>
+            <p class="text-gray-600 text-sm mb-4">Team Trident secures first place in ACM ICPC Regional Programming Contest</p>
+            <button class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</button>
+          </div>
+        </article>
+
+        <article class="news-item bg-white rounded-xl shadow-lg overflow-hidden" data-category="academic" data-id="news-6">
+          <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=200&fit=crop" 
+               alt="Industry Partnership" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Academic</span>
+              <span class="text-gray-500 text-sm">Nov 18, 2024</span>
+            </div>
+            <h3 class="font-bold text-lg mb-3">Industry Partnership with TCS</h3>
+            <p class="text-gray-600 text-sm mb-4">Strategic collaboration for curriculum development and internship programs</p>
+            <button class="text-blue-600 hover:text-blue-800 font-semibold text-sm">Read More →</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Announcements -->
+  <section class="py-16" data-id="announcements">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-id="announcements-title">Important Announcements</h2>
+      
+      <div class="max-w-4xl mx-auto space-y-6">
+        <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-lg" data-id="announcement-1">
+          <div class="flex items-start gap-4">
+            <i data-lucide="alert-circle" class="w-6 h-6 text-red-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg text-red-800 mb-2">Examination Schedule Released</h3>
+              <p class="text-red-700 mb-2">End semester examination schedule for December 2024 has been published. Students are advised to check the academic portal.</p>
+              <span class="text-red-600 text-sm font-semibold">Posted: Dec 1, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg" data-id="announcement-2">
+          <div class="flex items-start gap-4">
+            <i data-lucide="info" class="w-6 h-6 text-blue-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg text-blue-800 mb-2">Winter Break Hostel Guidelines</h3>
+              <p class="text-blue-700 mb-2">Students planning to stay during winter break must register by December 15, 2024. Special mess arrangements will be available.</p>
+              <span class="text-blue-600 text-sm font-semibold">Posted: Nov 28, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-green-50 border-l-4 border-green-500 p-6 rounded-lg" data-id="announcement-3">
+          <div class="flex items-start gap-4">
+            <i data-lucide="check-circle" class="w-6 h-6 text-green-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg text-green-800 mb-2">Alumni Meet Registration Open</h3>
+              <p class="text-green-700 mb-2">Registration is now open for Annual Alumni Meet 2024 scheduled for December 15-16. Limited seats available.</p>
+              <span class="text-green-600 text-sm font-semibold">Posted: Nov 25, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-lg" data-id="announcement-4">
+          <div class="flex items-start gap-4">
+            <i data-lucide="calendar" class="w-6 h-6 text-yellow-600 mt-1"></i>
+            <div>
+              <h3 class="font-bold text-lg text-yellow-800 mb-2">Library Extended Hours</h3>
+              <p class="text-yellow-700 mb-2">Central Library will remain open 24/7 during examination period from December 10-25, 2024.</p>
+              <span class="text-yellow-600 text-sm font-semibold">Posted: Nov 22, 2024</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white" data-id="newsletter">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4" data-id="newsletter-title">Stay Updated</h2>
+      <p class="text-xl mb-8 text-blue-100" data-id="newsletter-subtitle">Subscribe to our newsletter for latest news and announcements</p>
+      
+      <div class="max-w-md mx-auto flex gap-4" data-id="newsletter-form">
+        <input type="email" placeholder="Enter your email" 
+               class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300">
+        <button class="bg-white text-blue-600 px-6 py-3 rounded-lg hover:bg-gray-100 transition font-semibold">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // News filtering functionality
+    const filterBtns = document.querySelectorAll('.news-filter-btn');
+    const newsItems = document.querySelectorAll('.news-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-blue-600', 'text-white');
+          b.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        
+        btn.classList.add('active', 'bg-blue-600', 'text-white');
+        btn.classList.remove('bg-gray-200', 'text-gray-700');
+
+        // Filter news items
+        const category = btn.dataset.category;
+        
+        newsItems.forEach(item => {
+          if (category === 'all' || item.dataset.category === category) {
+            item.style.display = 'block';
+            setTimeout(() => {
+              item.style.opacity = '1';
+              item.style.transform = 'translateY(0)';
+            }, 100);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    lucide.createIcons();
+  </script>
+</body>
+</html>

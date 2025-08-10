@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4" data-id="about-title">About Trident Academy</h1>
+      <p class="text-xl opacity-90" data-id="about-subtitle">Excellence in Technical Education Since 2000</p>
+    </div>
+  </section>
+
+  <!-- College Overview -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold mb-6" data-id="overview-title">Our Legacy</h2>
+          <p class="text-gray-600 mb-4" data-id="overview-text-1">
+            Trident Academy of Technology, established in 2000, has been at the forefront of technical education in Eastern India. 
+            With over two decades of excellence, we have consistently produced industry-ready professionals who lead 
+            technological innovation across the globe.
+          </p>
+          <p class="text-gray-600 mb-6" data-id="overview-text-2">
+            Our commitment to academic excellence, combined with state-of-the-art infrastructure and experienced faculty, 
+            creates an environment where students thrive and achieve their full potential.
+          </p>
+          
+          <div class="grid grid-cols-2 gap-6">
+            <div class="text-center" data-id="stat-years">
+              <div class="text-3xl font-bold text-blue-600">24+</div>
+              <div class="text-gray-600">Years of Excellence</div>
+            </div>
+            <div class="text-center" data-id="stat-alumni">
+              <div class="text-3xl font-bold text-blue-600">15,000+</div>
+              <div class="text-gray-600">Alumni Worldwide</div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+               alt="College Campus" class="w-full rounded-lg shadow-lg" data-id="campus-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg" data-id="vision-card">
+          <div class="flex items-center mb-4">
+            <i data-lucide="eye" class="w-8 h-8 text-blue-600 mr-3"></i>
+            <h3 class="text-2xl font-bold">Our Vision</h3>
+          </div>
+          <p class="text-gray-600">
+            To be a globally recognized institution of higher learning that creates future leaders and innovators 
+            through excellence in education, research, and community service.
+          </p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-lg shadow-lg" data-id="mission-card">
+          <div class="flex items-center mb-4">
+            <i data-lucide="target" class="w-8 h-8 text-blue-600 mr-3"></i>
+            <h3 class="text-2xl font-bold">Our Mission</h3>
+          </div>
+          <p class="text-gray-600">
+            To provide quality technical education with emphasis on practical learning, research, and innovation 
+            while fostering ethical values and social responsibility among students.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Accreditations -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="certifications-title">Accreditations & Certifications</h2>
+        <p class="text-gray-600" data-id="certifications-subtitle">Recognized by leading educational bodies</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-6 bg-blue-50 rounded-lg" data-id="cert-aicte">
+          <i data-lucide="award" class="w-12 h-12 text-blue-600 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">AICTE Approved</h3>
+          <p class="text-sm text-gray-600">All programs approved by AICTE</p>
+        </div>
+        
+        <div class="text-center p-6 bg-green-50 rounded-lg" data-id="cert-university">
+          <i data-lucide="graduation-cap" class="w-12 h-12 text-green-600 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">BPUT Affiliated</h3>
+          <p class="text-sm text-gray-600">Affiliated to BPUT University</p>
+        </div>
+        
+        <div class="text-center p-6 bg-purple-50 rounded-lg" data-id="cert-naac">
+          <i data-lucide="star" class="w-12 h-12 text-purple-600 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">NAAC Accredited</h3>
+          <p class="text-sm text-gray-600">Grade A accreditation</p>
+        </div>
+        
+        <div class="text-center p-6 bg-orange-50 rounded-lg" data-id="cert-iso">
+          <i data-lucide="shield-check" class="w-12 h-12 text-orange-600 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">ISO Certified</h3>
+          <p class="text-sm text-gray-600">Quality management certified</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Programs -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="programs-title">Academic Programs</h2>
+        <p class="text-gray-600" data-id="programs-subtitle">Diverse programs for comprehensive education</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-id="program-btech">
+          <h3 class="text-xl font-semibold mb-3">B.Tech Programs</h3>
+          <ul class="text-gray-600 space-y-1 text-sm">
+            <li>• Computer Science & Engineering</li>
+            <li>• Electronics & Communication</li>
+            <li>• Mechanical Engineering</li>
+            <li>• Civil Engineering</li>
+            <li>• Information Technology</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-id="program-mtech">
+          <h3 class="text-xl font-semibold mb-3">M.Tech Programs</h3>
+          <ul class="text-gray-600 space-y-1 text-sm">
+            <li>• Computer Science & Engineering</li>
+            <li>• Electronics & Communication</li>
+            <li>• Mechanical Engineering</li>
+            <li>• Structural Engineering</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-id="program-management">
+          <h3 class="text-xl font-semibold mb-3">Management Programs</h3>
+          <ul class="text-gray-600 space-y-1 text-sm">
+            <li>• MBA</li>
+            <li>• MCA</li>
+            <li>• Executive Programs</li>
+            <li>• Certificate Courses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clubs & Activities -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4" data-id="clubs-title">Student Clubs & Activities</h2>
+        <p class="text-gray-600" data-id="clubs-subtitle">Beyond academics - holistic development</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-blue-50 p-6 rounded-lg text-center" data-id="club-tech">
+          <i data-lucide="code" class="w-8 h-8 text-blue-600 mx-auto mb-3"></i>
+          <h3 class="font-semibold mb-2">Tech Club</h3>
+          <p class="text-sm text-gray-600">Coding competitions, hackathons, and tech talks</p>
+        </div>
+        
+        <div class="bg-green-50 p-6 rounded-lg text-center" data-id="club-robotics">
+          <i data-lucide="cpu" class="w-8 h-8 text-green-600 mx-auto mb-3"></i>
+          <h3 class="font-semibold mb-2">Robotics Club</h3>
+          <p class="text-sm text-gray-600">Build and program robots for competitions</p>
+        </div>
+        
+        <div class="bg-purple-50 p-6 rounded-lg text-center" data-id="club-cultural">
+          <i data-lucide="music" class="w-8 h-8 text-purple-600 mx-auto mb-3"></i>
+          <h3 class="font-semibold mb-2">Cultural Club</h3>
+          <p class="text-sm text-gray-600">Music, dance, drama, and art activities</p>
+        </div>
+        
+        <div class="bg-red-50 p-6 rounded-lg text-center" data-id="club-sports">
+          <i data-lucide="trophy" class="w-8 h-8 text-red-600 mx-auto mb-3"></i>
+          <h3 class="font-semibold mb-2">Sports Club</h3>
+          <p class="text-sm text-gray-600">Cricket, football, basketball, and athletics</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Information -->
+  <section class="py-16 bg-blue-900 text-white">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center" data-id="contact-address">
+          <i data-lucide="map-pin" class="w-8 h-8 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">Address</h3>
+          <p class="text-sm opacity-90">
+            F2, Chandaka Industrial Estate<br>
+            Bhubaneswar, Odisha 751024<br>
+            India
+          </p>
+        </div>
+        
+        <div class="text-center" data-id="contact-phone">
+          <i data-lucide="phone" class="w-8 h-8 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">Phone</h3>
+          <p class="text-sm opacity-90">
+            +91 674-2720001<br>
+            +91 674-2720002<br>
+            Toll Free: 1800-345-3333
+          </p>
+        </div>
+        
+        <div class="text-center" data-id="contact-email">
+          <i data-lucide="mail" class="w-8 h-8 mx-auto mb-4"></i>
+          <h3 class="font-semibold mb-2">Email</h3>
+          <p class="text-sm opacity-90">
+            info@trident.ac.in<br>
+            admissions@trident.ac.in<br>
+            careers@trident.ac.in
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

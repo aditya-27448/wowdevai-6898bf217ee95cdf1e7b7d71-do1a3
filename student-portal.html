@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <div class="container mx-auto px-4 py-8">
+    <!-- Login Form (Initially visible) -->
+    <div id="login-section" class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-8" data-id="login-form">
+      <div class="text-center mb-8">
+        <h1 class="text-2xl font-bold text-gray-900 mb-2" data-id="login-title">Student Portal</h1>
+        <p class="text-gray-600" data-id="login-subtitle">Sign in to access your dashboard</p>
+      </div>
+      
+      <form id="student-login-form">
+        <div class="mb-4">
+          <label for="student-id" class="block text-sm font-medium text-gray-700 mb-2">Student ID</label>
+          <input type="text" id="student-id" name="studentId" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter your student ID" required data-id="student-id-input">
+        </div>
+        
+        <div class="mb-6">
+          <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+          <input type="password" id="password" name="password" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Enter your password" required data-id="password-input">
+        </div>
+        
+        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium" data-id="login-submit-btn">
+          Sign In
+        </button>
+      </form>
+      
+      <div class="mt-6 text-center">
+        <a href="#" class="text-sm text-blue-600 hover:text-blue-800" data-id="forgot-password-link">Forgot Password?</a>
+      </div>
+    </div>
+
+    <!-- Student Dashboard (Initially hidden) -->
+    <div id="student-dashboard" class="hidden" data-id="student-dashboard">
+      <!-- Dashboard Header -->
+      <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <img id="student-photo" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Student Photo" class="w-16 h-16 rounded-full object-cover">
+            <div>
+              <h1 class="text-2xl font-bold text-gray-900" id="student-name" data-id="student-name">Rahul Kumar</h1>
+              <p class="text-gray-600" id="student-info" data-id="student-info">B.Tech CSE - 3rd Year | Roll: 2022001</p>
+            </div>
+          </div>
+          <button id="logout-btn" class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors" data-id="logout-btn">
+            <i data-lucide="log-out" class="w-4 h-4 inline mr-2"></i>Logout
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center" data-id="attendance-card">
+          <div class="text-3xl font-bold text-green-600 mb-2">89%</div>
+          <div class="text-gray-600">Attendance</div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center" data-id="cgpa-card">
+          <div class="text-3xl font-bold text-blue-600 mb-2">8.4</div>
+          <div class="text-gray-600">CGPA</div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center" data-id="dues-card">
+          <div class="text-3xl font-bold text-orange-600 mb-2">₹5,000</div>
+          <div class="text-gray-600">Pending Dues</div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg p-6 text-center" data-id="credits-card">
+          <div class="text-3xl font-bold text-purple-600 mb-2">142/160</div>
+          <div class="text-gray-600">Credits</div>
+        </div>
+      </div>
+
+      <!-- Dashboard Tabs -->
+      <div class="bg-white rounded-lg shadow-lg">
+        <div class="border-b border-gray-200">
+          <nav class="flex space-x-8" data-id="dashboard-tabs">
+            <button class="tab-button active py-4 px-6 text-blue-600 font-medium border-b-2 border-blue-600" data-tab="attendance">Attendance</button>
+            <button class="tab-button py-4 px-6 text-gray-500 hover:text-gray-700 font-medium" data-tab="marks">Marks</button>
+            <button class="tab-button py-4 px-6 text-gray-500 hover:text-gray-700 font-medium" data-tab="fees">Fees</button>
+            <button class="tab-button py-4 px-6 text-gray-500 hover:text-gray-700 font-medium" data-tab="schedule">Schedule</button>
+          </nav>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="p-6">
+          <!-- Attendance Tab -->
+          <div id="attendance-tab" class="tab-content" data-id="attendance-tab">
+            <h3 class="text-lg font-semibold mb-4">Attendance Summary</h3>
+            <div class="space-y-4">
+              <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                <div>
+                  <div class="font-medium">Data Structures & Algorithms</div>
+                  <div class="text-sm text-gray-600">Prof. Dr. Singh</div>
+                </div>
+                <div class="text-right">
+                  <div class="font-semibold text-green-600">92%</div>
+                  <div class="text-xs text-gray-500">23/25 classes</div>
+                </div>
+              </div>
+              
+              <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                <div>
+                  <div class="font-medium">Database Management Systems</div>
+                  <div class="text-sm text-gray-600">Prof. Dr. Patel</div>
+                </div>
+                <div class="text-right">
+                  <div class="font-semibold text-green-600">88%</div>
+                  <div class="text-xs text-gray-500">22/25 classes</div>
+                </div>
+              </div>
+              
+              <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                <div>
+                  <div class="font-medium">Computer Networks</div>
+                  <div class="text-sm text-gray-600">Prof. Dr. Sharma</div>
+                </div>
+                <div class="text-right">
+                  <div class="font-semibold text-yellow-600">78%</div>
+                  <div class="text-xs text-gray-500">19/24 classes</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Marks Tab -->
+          <div id="marks-tab" class="tab-content hidden" data-id="marks-tab">
+            <h3 class="text-lg font-semibold mb-4">Academic Performance</h3>
+            <div class="space-y-6">
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-medium mb-3">Semester 5 Results</h4>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div class="flex justify-between">
+                    <span>Data Structures & Algorithms</span>
+                    <span class="font-semibold">A+ (9.2)</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Database Management Systems</span>
+                    <span class="font-semibold">A (8.8)</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Computer Networks</span>
+                    <span class="font-semibold">B+ (7.5)</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Software Engineering</span>
+                    <span class="font-semibold">A (8.6)</span>
+                  </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                  <div class="flex justify-between font-semibold">
+                    <span>SGPA:</span>
+                    <span>8.5</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fees Tab -->
+          <div id="fees-tab" class="tab-content hidden" data-id="fees-tab">
+            <h3 class="text-lg font-semibold mb-4">Fee Details</h3>
+            <div class="space-y-4">
+              <div class="bg-gray-50 rounded-lg p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-medium">Semester 6 Fee</span>
+                  <span class="text-red-600 font-semibold">Pending</span>
+                </div>
+                <div class="text-sm text-gray-600 mb-2">Due Date: January 15, 2024</div>
+                <div class="flex justify-between items-center">
+                  <span>Amount: ₹75,000</span>
+                  <button class="bg-blue-600 text-white px-4 py-2 rounded text-sm hover:bg-blue-700">Pay Now</button>
+                </div>
+              </div>
+              
+              <div class="bg-green-50 rounded-lg p-4">
+                <div class="flex justify-between items-center mb-2">
+                  <span class="font-medium">Semester 5 Fee</span>
+                  <span class="text-green-600 font-semibold">Paid</span>
+                </div>
+                <div class="text-sm text-gray-600 mb-2">Paid on: August 10, 2023</div>
+                <div class="flex justify-between items-center">
+                  <span>Amount: ₹75,000</span>
+                  <button class="text-blue-600 text-sm hover:text-blue-800">Download Receipt</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Schedule Tab -->
+          <div id="schedule-tab" class="tab-content hidden" data-id="schedule-tab">
+            <h3 class="text-lg font-semibold mb-4">Class Schedule</h3>
+            <div class="space-y-4">
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-medium mb-3">Today's Classes</h4>
+                <div class="space-y-2">
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-medium">9:00 AM - 10:00 AM</span>
+                      <div class="text-sm text-gray-600">Data Structures & Algorithms</div>
+                    </div>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Room 201</span>
+                  </div>
+                  
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-medium">11:00 AM - 12:00 PM</span>
+                      <div class="text-sm text-gray-600">Database Management Systems</div>
+                    </div>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Lab 3</span>
+                  </div>
+                  
+                  <div class="flex justify-between items-center">
+                    <div>
+                      <span class="font-medium">2:00 PM - 3:00 PM</span>
+                      <div class="text-sm text-gray-600">Computer Networks</div>
+                    </div>
+                    <span class="text-sm bg-blue-100 text-blue-800 px-2 py-1 rounded">Room 105</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Student portal functionality
+    const loginForm = document.getElementById('student-login-form');
+    const loginSection = document.getElementById('login-section');
+    const dashboard = document.getElementById('student-dashboard');
+    const logoutBtn = document.getElementById('logout-btn');
+    const tabButtons = document.querySelectorAll('.tab-button');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    // Demo login
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      loginSection.classList.add('hidden');
+      dashboard.classList.remove('hidden');
+    });
+
+    // Logout
+    logoutBtn.addEventListener('click', () => {
+      dashboard.classList.add('hidden');
+      loginSection.classList.remove('hidden');
+      loginForm.reset();
+    });
+
+    // Tab switching
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const targetTab = button.getAttribute('data-tab');
+        
+        // Update button states
+        tabButtons.forEach(btn => {
+          btn.classList.remove('active', 'text-blue-600', 'border-blue-600');
+          btn.classList.add('text-gray-500');
+        });
+        button.classList.add('active', 'text-blue-600', 'border-blue-600', 'border-b-2');
+        button.classList.remove('text-gray-500');
+        
+        // Update tab content
+        tabContents.forEach(content => content.classList.add('hidden'));
+        document.getElementById(`${targetTab}-tab`).classList.remove('hidden');
+      });
+    });
+
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>

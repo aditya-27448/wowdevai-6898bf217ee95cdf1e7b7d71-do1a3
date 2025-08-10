@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Trident Academy of Technology</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/yjp3aho.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body { font-family: "sofia-pro", sans-serif; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+  <div id="navbar-container" data-source="components/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-900 to-purple-900 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4" data-id="gallery-title">Campus Gallery</h1>
+      <p class="text-xl opacity-90" data-id="gallery-subtitle">Explore our vibrant campus life</p>
+    </div>
+  </section>
+
+  <!-- Gallery Filters -->
+  <section class="py-8 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap justify-center gap-4">
+        <button class="gallery-filter active bg-blue-600 text-white px-4 py-2 rounded-lg" data-filter="all" data-id="filter-all">All Photos</button>
+        <button class="gallery-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="campus" data-id="filter-campus">Campus</button>
+        <button class="gallery-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="events" data-id="filter-events">Events</button>
+        <button class="gallery-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="labs" data-id="filter-labs">Labs</button>
+        <button class="gallery-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="sports" data-id="filter-sports">Sports</button>
+        <button class="gallery-filter bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300" data-filter="graduation" data-id="filter-graduation">Graduation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="gallery-grid">
+        
+        <!-- Campus Photos -->
+        <div class="gallery-item group cursor-pointer" data-category="campus" data-id="campus-1">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Main Building" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Main Academic Building</h3>
+              <p class="text-sm text-gray-600">Central hub of academic activities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="campus" data-id="campus-2">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Library" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Central Library</h3>
+              <p class="text-sm text-gray-600">State-of-the-art learning resources</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="labs" data-id="labs-1">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Computer Lab" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Computer Laboratory</h3>
+              <p class="text-sm text-gray-600">Modern computing facilities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="events" data-id="events-1">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tech Fest" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Annual Tech Fest</h3>
+              <p class="text-sm text-gray-600">Students showcasing innovations</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="sports" data-id="sports-1">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sports Complex" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Sports Complex</h3>
+              <p class="text-sm text-gray-600">Multi-sport facilities</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="graduation" data-id="graduation-1">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Convocation" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Convocation Ceremony</h3>
+              <p class="text-sm text-gray-600">Celebrating achievements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="campus" data-id="campus-3">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Auditorium" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Main Auditorium</h3>
+              <p class="text-sm text-gray-600">Venue for major events</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="labs" data-id="labs-2">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Electronics Lab" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Electronics Laboratory</h3>
+              <p class="text-sm text-gray-600">Advanced electronics equipment</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="events" data-id="events-2">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cultural Event" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Cultural Festival</h3>
+              <p class="text-sm text-gray-600">Celebrating diversity and talent</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="campus" data-id="campus-4">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1592280771190-3e2e4d571952?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Hostel" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Student Hostel</h3>
+              <p class="text-sm text-gray-600">Comfortable accommodation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="labs" data-id="labs-3">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1581092795442-7744db11c9ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mechanical Lab" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Mechanical Workshop</h3>
+              <p class="text-sm text-gray-600">Hands-on learning experience</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item group cursor-pointer" data-category="sports" data-id="sports-2">
+          <div class="relative overflow-hidden rounded-lg shadow-lg bg-white">
+            <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cricket Ground" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
+              <i data-lucide="zoom-in" class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></i>
+            </div>
+            <div class="p-4">
+              <h3 class="font-semibold text-gray-900">Cricket Ground</h3>
+              <p class="text-sm text-gray-600">Professional playing field</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Modal -->
+  <div id="image-modal" class="fixed inset-0 bg-black bg-opacity-90 hidden z-50 flex items-center justify-center p-4">
+    <div class="relative max-w-4xl max-h-full">
+      <button id="close-modal" class="absolute top-4 right-4 text-white hover:text-gray-300 z-10" data-id="close-modal-btn">
+        <i data-lucide="x" class="w-8 h-8"></i>
+      </button>
+      <img id="modal-image" src="" alt="" class="max-w-full max-h-full object-contain rounded-lg">
+      <div id="modal-caption" class="absolute bottom-4 left-4 right-4 text-white text-center bg-black bg-opacity-50 p-4 rounded-lg">
+        <h3 id="modal-title" class="font-semibold mb-1"></h3>
+        <p id="modal-description" class="text-sm"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-container" data-source="components/footer.html"></div>
+
+  <script type="module">
+    import { loadComponent } from './scripts/components/loader.js';
+    
+    // Load shared components
+    loadComponent('#navbar-container');
+    loadComponent('#footer-container');
+    
+    // Gallery filtering
+    const filterButtons = document.querySelectorAll('.gallery-filter');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+        
+        // Update button states
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active', 'bg-blue-600', 'text-white');
+          btn.classList.add('bg-gray-200', 'text-gray-700');
+        });
+        button.classList.add('active', 'bg-blue-600', 'text-white');
+        button.classList.remove('bg-gray-200', 'text-gray-700');
+        
+        // Filter gallery items
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Image modal functionality
+    const modal = document.getElementById('image-modal');
+    const modalImage = document.getElementById('modal-image');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescription = document.getElementById('modal-description');
+    const closeModal = document.getElementById('close-modal');
+
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        const img = item.querySelector('img');
+        const title = item.querySelector('h3').textContent;
+        const description = item.querySelector('p').textContent;
+        
+        modalImage.src = img.src;
+        modalImage.alt = img.alt;
+        modalTitle.textContent = title;
+        modalDescription.textContent = description;
+        modal.classList.remove('hidden');
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+
+    // ESC key to close modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+        modal.classList.add('hidden');
+      }
+    });
+
+    // Initialize icons
+    setTimeout(() => {
+      lucide.createIcons();
+    }, 100);
+  </script>
+</body>
+</html>
